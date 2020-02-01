@@ -29,6 +29,7 @@ public class EggBreak : MonoBehaviour
         {
             GameObject child = transform.GetChild(i).gameObject;
             child.AddComponent<Rigidbody>();
+            child.GetComponent<Rigidbody>().velocity = this.GetComponent<Rigidbody>().velocity;
             child.AddComponent<MeshCollider>();
             child.GetComponent<MeshCollider>().convex = true;
         }

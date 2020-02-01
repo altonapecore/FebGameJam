@@ -17,7 +17,7 @@ public class EggSpawner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(egg, new Vector3(2, 25, 6), Quaternion.identity, this.transform);
+            Instantiate(egg, new Vector3(2, 50, 6), Quaternion.identity, this.transform);
         }
     }
 }
