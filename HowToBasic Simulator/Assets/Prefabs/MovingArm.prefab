@@ -708,7 +708,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thumbsGrunt: {fileID: 8927900239757846149}
-  doTheThing: 0
 --- !u!82 &8927900239757846149
 AudioSource:
   m_ObjectHideFlags: 0
