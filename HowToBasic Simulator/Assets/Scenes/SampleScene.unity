@@ -470,11 +470,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg_breakable
       objectReference: {fileID: 0}
-    - target: {fileID: 5575509118920283654, guid: 97ddf10c439aec14db4fd36c9d1120bf,
-        type: 3}
-      propertyPath: eggYolk
-      value: 
-      objectReference: {fileID: 5498572460865961526, guid: f4d934d7e7a0b9248a6eff788216f372,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97ddf10c439aec14db4fd36c9d1120bf, type: 3}
