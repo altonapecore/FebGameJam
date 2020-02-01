@@ -10,6 +10,7 @@ public class MakeDecal : MonoBehaviour
     public float minX;
     public float maxZ;
     public float minZ;
+    public float yValue;
     public int maxDecals;
 
     private int numDecals;
@@ -41,7 +42,7 @@ public class MakeDecal : MonoBehaviour
         // iterate
         for (int i = 0; i < numEnter; i++)
         {
-            Debug.Log("beans");
+            
 
             ParticleSystem.Particle p = enter[i];
             if (numDecals <= maxDecals)
@@ -49,10 +50,10 @@ public class MakeDecal : MonoBehaviour
                 Instantiate(decal);
                 float tempX = Random.Range(minX, maxX);
                 float tempZ = Random.Range(minZ, maxZ);
-                decal.transform.position = new Vector3(tempX, 17.6f, tempZ);
+                decal.transform.position = new Vector3(tempX, p.position.y, tempZ);
                 numDecals++;
             }
-            p.position = new Vector3(1000, 0, 1000);
+            p.position = new Vector3(1000, p.position.y, 1000);
             enter[i] = p;
         }
 
