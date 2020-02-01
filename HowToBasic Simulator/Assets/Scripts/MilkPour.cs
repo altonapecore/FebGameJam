@@ -7,10 +7,12 @@ public class MilkPour : MonoBehaviour
     // Fields
     public GameObject milkJug;
     public ParticleSystem milk;
+    public AudioSource milkSound;
     public bool active;
 
     private bool moving;
     private bool moveBack;
+    private bool soundPlay;
     private float rotation;
     private float timer;
 
@@ -19,6 +21,7 @@ public class MilkPour : MonoBehaviour
     {
         milk.Pause();
         moving = true;
+        soundPlay = false;
     }
 
     // Update is called once per frame
@@ -38,6 +41,7 @@ public class MilkPour : MonoBehaviour
             {
                 moving = false;
                 milk.Play();
+                if (!soundPlay) { soundPlay = true; milkSound.Play(); }
                 // Start a timer
                 timer += Time.deltaTime;
             }
@@ -45,6 +49,7 @@ public class MilkPour : MonoBehaviour
             if(timer >= 3.5)
             {
                 milk.Stop();
+                if (soundPlay) { soundPlay = false; milkSound.Stop(); }
                 moveBack = true;
             }
 
