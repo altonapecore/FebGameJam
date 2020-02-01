@@ -46,7 +46,7 @@ public class MilkPour : MonoBehaviour
                 timer += Time.deltaTime;
             }
 
-            if(timer >= 3.5)
+            if(timer >= 1.5)
             {
                 milk.Stop();
                 if (soundPlay) { soundPlay = false; milkSound.Stop(); }
