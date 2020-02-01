@@ -57,12 +57,15 @@ public class Hammer : MonoBehaviour
             }
             else
             {
-                active = false;
-
                 if(rotation < 0.0f)
                 {
                     hammer.transform.Rotate(0, 0, 210 * Time.deltaTime);
                     rotation += 210 * Time.deltaTime;
+                }
+
+                if(rotation >= 0.0f)
+                {
+                    active = false;
                 }
             }
         }
