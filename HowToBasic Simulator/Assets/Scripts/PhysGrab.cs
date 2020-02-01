@@ -32,6 +32,7 @@ public class PhysGrab : MonoBehaviour
 	{
 		if (grabbed)
 		{
+			anchor.transform.position = new Vector3(anchor.transform.position.x, 6, anchor.transform.position.z);
 			anchor.transform.position += new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y"));
 			spring.connectedBody = thisRB;
 			thisRB.WakeUp();
