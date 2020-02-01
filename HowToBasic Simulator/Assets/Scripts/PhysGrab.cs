@@ -12,7 +12,7 @@ public class PhysGrab : MonoBehaviour
 	{
 		thisRB = GetComponent<Rigidbody>();
 		spring = anchor.GetComponent<SpringJoint>();
-		anchor.transform.SetParent(transform.parent, true);
+		anchor.transform.SetParent(null, true);
 	}
 
 	private void OnMouseDown()
