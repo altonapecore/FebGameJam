@@ -5,6 +5,7 @@ using UnityEngine;
 public class EggBreak : MonoBehaviour
 {
     public GameObject eggYolk;
+    bool broken = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,10 @@ public class EggBreak : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        BreakEgg();
+        if (!broken)
+        {
+            BreakEgg();
+            broken = true;
+        }
     }
 }

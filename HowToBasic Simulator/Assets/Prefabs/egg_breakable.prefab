@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8124adb796e7f4a80ce62071cc1ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eggYolk: {fileID: 0}
+  eggYolk: {fileID: 5498572460865961526, guid: f4d934d7e7a0b9248a6eff788216f372, type: 3}
 --- !u!1 &5259675727991130269
 GameObject:
   m_ObjectHideFlags: 0
