@@ -4,3 +4,7 @@ howToBasic grunts/screams/hammer/egg/music: https://www.youtube.com/watch?v=D5Xr
 
 screwdriver: https://freesound.org/people/16GPanskaToman_Kristian/sounds/496286/
 
+hammer: https://freesound.org/people/blukotek/sounds/337813/
+
+egg crack: https://www.youtube.com/watch?v=B-YKXStWwFs
+
