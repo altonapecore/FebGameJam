@@ -5,6 +5,7 @@ using UnityEngine;
 public class EggBreak : MonoBehaviour
 {
     public GameObject eggYolk;
+    public AudioSource eggBreakSound;
     bool broken = false;
 
     // Start is called before the first frame update
@@ -40,6 +41,7 @@ public class EggBreak : MonoBehaviour
         if (!broken)
         {
             BreakEgg();
+            eggBreakSound.Play();
             broken = true;
         }
     }
