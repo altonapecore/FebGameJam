@@ -1,0 +1,32 @@
+newmtl toolsFBXASC046hamerSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl toolsFBXASC046scissorsSG
+illum 4
+Kd 0.00 0.00 0.33
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.16
+Ns 23.00
+newmtl toolsFBXASC046scissorsSG1
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.40 0.40 0.40
+Ns 23.00
+newmtl toolsFBXASC046screwdriversSG
+illum 4
+Kd 0.00 0.02 0.45
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
