@@ -881,6 +881,18 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1863504140}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1109138973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2861475767598223525, guid: 9301839da1b60ce4d9b10d0336213d25,
+    type: 3}
+  m_PrefabInstance: {fileID: 1863504140}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109138968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7847acf199b0374b8e97cd341435a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &1109138975 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4728144421742113489, guid: 9301839da1b60ce4d9b10d0336213d25,
@@ -1026,6 +1038,18 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1863504140}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1321847262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2698954063564182, guid: 9301839da1b60ce4d9b10d0336213d25,
+    type: 3}
+  m_PrefabInstance: {fileID: 1863504140}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321847258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7847acf199b0374b8e97cd341435a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1392121044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1965,6 +1989,11 @@ PrefabInstance:
       propertyPath: clink
       value: 
       objectReference: {fileID: 1109138970}
+    - target: {fileID: 3089078742519694978, guid: 9301839da1b60ce4d9b10d0336213d25,
+        type: 3}
+      propertyPath: physGrab
+      value: 
+      objectReference: {fileID: 1109138973}
     - target: {fileID: 3452948703954562543, guid: 9301839da1b60ce4d9b10d0336213d25,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2045,6 +2074,11 @@ PrefabInstance:
       propertyPath: clink
       value: 
       objectReference: {fileID: 1321847259}
+    - target: {fileID: 5670390701574001117, guid: 9301839da1b60ce4d9b10d0336213d25,
+        type: 3}
+      propertyPath: physGrab
+      value: 
+      objectReference: {fileID: 1321847262}
     - target: {fileID: 6058500732021459431, guid: 9301839da1b60ce4d9b10d0336213d25,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
