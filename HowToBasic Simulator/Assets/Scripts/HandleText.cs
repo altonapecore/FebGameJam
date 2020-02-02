@@ -6,16 +6,19 @@ using UnityEngine.UI;
 public class HandleText : MonoBehaviour
 {
     private int step;
-    private List<string> textSteps;
-    private Text text;
+    public List<string> textSteps;
+    public string text;
     private int eggCount;
 
-    public GameObject screen;
+    [Header("Transition Triggers")]
+    public Rigidbody screenRigid;
+    public Rigidbody boardRigid;
+
+    //public GameObject screen;
 
     // Start is called before the first frame update
     void Start()
     {
-        text = this.GetComponent<Text>();
         step = 0;
 
         textSteps.Add("Step 1: Unscrew Screen");
@@ -36,64 +39,87 @@ public class HandleText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // testing
+        //Debug.Log(!screen.IsSleeping());
+
         if (step == 0)
         {
-            text.text = textSteps[step];
+            text = textSteps[step];
             step++;
         }
-        else if (step == 1)
+        else if (step == 1 && !screenRigid.isKinematic)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 2)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 3)
         {
-            text.text = textSteps[step];
+            text = textSteps[step];
             step++;
         }
-        else if (step == 4)
+        else if (step == 4 && !boardRigid.isKinematic)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 5)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 6)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 7)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 8)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 9)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 10)
         {
-            text.text = textSteps[step];
-            step++;
+            text = textSteps[step];
         }
         else if (step == 11)
         {
-            text.text = textSteps[step];
+            text = textSteps[step];
+        }
+        else if (step == 12)
+        {
+            text = textSteps[step];
+        }
+
+        this.GetComponent<Text>().text = text;
+    }
+
+    public void Step2Done()
+    {
+        if (step == 1)
+        {
+            step++;
+        }
+    }
+
+    public void Step3Done()
+    {
+        if (step == 2)
+        {
+            step++;
+        }
+    }
+
+    public void NextClick()
+    {
+        if (step <= 11)
+        {
             step++;
         }
     }

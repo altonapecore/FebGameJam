@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PhysGrab : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class PhysGrab : MonoBehaviour
 	Rigidbody thisRB;
 	bool grabbed;
 	SpringJoint spring;
+	public UnityEvent dragger;
+
+
 	private void Start()
 	{
 		thisRB = GetComponent<Rigidbody>();
@@ -24,6 +28,7 @@ public class PhysGrab : MonoBehaviour
 			anchor.transform.position = transform.position;
 			spring.connectedAnchor = new Vector3(0,0,0);
 			spring.anchor = transform.position;
+			dragger.Invoke();
 		}
 		
 	}
@@ -49,4 +54,6 @@ public class PhysGrab : MonoBehaviour
 			thisRB.WakeUp();
 		}
 	}
+
+	
 }

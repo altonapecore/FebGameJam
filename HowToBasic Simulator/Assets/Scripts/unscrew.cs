@@ -53,6 +53,7 @@ public class unscrew : MonoBehaviour
 		{
 			transform.localPosition = Vector3.Lerp(unscrewStart, transform.rotation * unscrewTarget + unscrewStart, unscrewLerp);
 			unscrewLerp += .02f;
+			screwDriver.transform.position = transform.position;
 		}
 
 		if (unscrewLerp >= .9 && !unscrewed)
