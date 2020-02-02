@@ -34,16 +34,14 @@ public class ForceBreak : MonoBehaviour
         //Editing parent screen
         Destroy(GetComponent<Rigidbody>());
         GetComponent<BoxCollider>().enabled = false;
-        Debug.Log("Broken");
 
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.rigidbody != null && collision.rigidbody.velocity.magnitude > velThresh)
+        if(collision.gameObject.tag == "hammer" && collision.rigidbody.velocity.magnitude >= velThresh && !GetComponent<Rigidbody>().isKinematic)
         {
             Break();
-            Debug.Log("hit");
         }
     }
 }

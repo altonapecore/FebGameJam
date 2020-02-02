@@ -6,6 +6,7 @@ TagManager:
   tags:
   - piece
   - grabber
+  - hammer
   layers:
   - Default
   - TransparentFX
