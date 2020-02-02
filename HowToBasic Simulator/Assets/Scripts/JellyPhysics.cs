@@ -13,6 +13,7 @@ public class JellyPhysics : MonoBehaviour
 
     JellyVertex[] jellyVertices;
     Vector3[] currentMeshVertices;
+    public AudioSource[] squishySounds;
 
     private void Start()
     {
@@ -73,7 +74,10 @@ public class JellyPhysics : MonoBehaviour
         for(int i = 0; i < jellyVertices.Length; i++)
         {
             jellyVertices[i].ApplyPressureToVertex(transform, _point, _pressure);
+            
         }
+
+        squishySounds[Random.Range(0, 3)].Play();
     }
 
     public void MouseClick()
