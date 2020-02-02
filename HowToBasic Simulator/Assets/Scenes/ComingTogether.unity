@@ -794,31 +794,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velThresh: 0
+  breaking: {fileID: 0}
 --- !u!54 &1109138975 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 4728144421742113489, guid: 9301839da1b60ce4d9b10d0336213d25,
     type: 3}
   m_PrefabInstance: {fileID: 1863504140}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1321847258 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8570094427025351302, guid: 9301839da1b60ce4d9b10d0336213d25,
-    type: 3}
-  m_PrefabInstance: {fileID: 1863504140}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1321847259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321847258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac3a982f557d944aac1b184c4cc3158, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velThresh: 0
 --- !u!1001 &1392121044
 PrefabInstance:
   m_ObjectHideFlags: 0
