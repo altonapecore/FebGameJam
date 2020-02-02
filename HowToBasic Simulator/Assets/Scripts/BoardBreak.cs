@@ -5,6 +5,8 @@ using UnityEngine;
 public class BoardBreak : MonoBehaviour
 {
     public float velThresh;
+    public AudioSource breaking;
+    public AudioSource clink;
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +22,12 @@ public class BoardBreak : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        clink.Play();
+
         if(collision.gameObject.tag == "hammer" && !GetComponent<Rigidbody>().isKinematic && collision.rigidbody.velocity.magnitude >= velThresh)
         {
             Break();
-            this.GetComponent<AudioSource>().Play();
+            breaking.Play();
         }
     }
 

@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1683268c1bc59542ac1d4b57d3814e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceSpeed: 75
-  fallForce: 50
-  stiffness: 3
+  bounceSpeed: 100
+  fallForce: 75
+  stiffness: 2
 --- !u!54 &-2484300980879468115
 Rigidbody:
   m_ObjectHideFlags: 0
