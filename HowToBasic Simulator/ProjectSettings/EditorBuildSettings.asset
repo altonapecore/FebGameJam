@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ComingTogether.unity
+    guid: e8f36c8346704ec469482b975ff1396e
   m_configObjects: {}
