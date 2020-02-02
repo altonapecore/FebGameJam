@@ -10,6 +10,8 @@ public class HandleText : MonoBehaviour
     public string text;
     private int eggCount;
 
+    public unscrew[] boardScrews;
+
     [Header("Transition Triggers")]
     public Rigidbody screenRigid;
     public Rigidbody boardRigid;
@@ -44,7 +46,7 @@ public class HandleText : MonoBehaviour
             text = textSteps[step];
             step++;
         }
-        else if (step == 1 && screenRigid != null)
+        else if (step == 1 && screenRigid != null) 
         {
             if (!screenRigid.isKinematic)
             {
@@ -52,13 +54,21 @@ public class HandleText : MonoBehaviour
                 screenRigid = null;
             }
         }
-        else if (step == 2)
+        else if (step == 2) //Battery
         {
             text = textSteps[step];
+            foreach (unscrew screw in boardScrews)
+            {
+                screw.enabled = false;
+            }
         }
         else if (step == 3)
         {
             text = textSteps[step];
+            foreach (unscrew screw in boardScrews)
+            {
+                screw.enabled = true;
+            }
             step++;
         }
         else if (step == 4 && boardRigid != null)

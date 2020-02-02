@@ -22,10 +22,10 @@ public class unscrew : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		
 
 		if (!unscrewed)
 		{
+			screwDriver.SetActive(true);
 			screwDriver.transform.position = transform.position;
 			if (transform.rotation.z == 0)
 			{
@@ -36,15 +36,16 @@ public class unscrew : MonoBehaviour
 				screwDriver.transform.rotation = Quaternion.Euler(0, 0, 180.0f);
 			}
 			lerping = true;
+			
 			this.GetComponent<AudioSource>().Play();
 		}
-		
 	}
 
 	private void OnMouseUp()
 	{
 		lerping = false;
 		this.GetComponent<AudioSource>().Stop();
+		screwDriver.SetActive(false);
 	}
 
 	// Update is called once per frame
