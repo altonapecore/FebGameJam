@@ -5,6 +5,7 @@ using UnityEngine;
 public class BoardBreak : MonoBehaviour
 {
     public float velThresh;
+    public PhysGrab physGrab;
     public AudioSource breaking;
     public AudioSource clink;
 
@@ -49,5 +50,6 @@ public class BoardBreak : MonoBehaviour
         BoxCollider[] boxColliders = GetComponents<BoxCollider>();
         boxColliders[0].enabled = false;
         boxColliders[1].enabled = false;
+        physGrab.enabled = false;
     }
 }
