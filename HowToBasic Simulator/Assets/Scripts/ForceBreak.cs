@@ -42,6 +42,7 @@ public class ForceBreak : MonoBehaviour
         if(collision.gameObject.tag == "hammer" && collision.rigidbody.velocity.magnitude >= velThresh && !GetComponent<Rigidbody>().isKinematic)
         {
             Break();
+            this.GetComponent<AudioSource>().Play();
         }
     }
 }

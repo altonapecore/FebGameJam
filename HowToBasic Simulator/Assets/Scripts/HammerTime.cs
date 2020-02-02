@@ -5,7 +5,7 @@ using UnityEngine;
 public class HammerTime : MonoBehaviour
 {
     public List<AudioSource> sounds;
-    //private Random rng;
+    public GameObject music;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +23,6 @@ public class HammerTime : MonoBehaviour
     {
         int soundIndex = (int)(Random.value * 20);
         sounds[soundIndex].Play();
+        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Stop();
     }
 }

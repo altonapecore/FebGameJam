@@ -483,7 +483,7 @@ Transform:
   m_GameObject: {fileID: 604524319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: -17.57, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalScale: {x: 300, y: 1, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -561,9 +561,9 @@ Canvas:
   m_GameObject: {fileID: 985044529}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1851093740}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -608,7 +608,7 @@ PrefabInstance:
     - target: {fileID: 8927900239045457390, guid: 7f09b4689e29aa94a8a802006ffa226a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.14
+      value: 11.81
       objectReference: {fileID: 0}
     - target: {fileID: 8927900239045457390, guid: 7f09b4689e29aa94a8a802006ffa226a,
         type: 3}
@@ -618,7 +618,7 @@ PrefabInstance:
     - target: {fileID: 8927900239045457390, guid: 7f09b4689e29aa94a8a802006ffa226a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.8
+      value: -14.25
       objectReference: {fileID: 0}
     - target: {fileID: 8927900239045457390, guid: 7f09b4689e29aa94a8a802006ffa226a,
         type: 3}
@@ -915,6 +915,8 @@ MonoBehaviour:
   - {fileID: 4293639991479255857, guid: 97ddf10c439aec14db4fd36c9d1120bf, type: 3}
   - {fileID: 5169485734841577024, guid: 773db5b343264dc40a3b4becf0b29360, type: 3}
   - {fileID: 3487750778978244043, guid: 7f88dfbfea1dfa342bc63e041419a011, type: 3}
+  - {fileID: 4293639991479255857, guid: 97ddf10c439aec14db4fd36c9d1120bf, type: 3}
+  - {fileID: 4293639991479255857, guid: 97ddf10c439aec14db4fd36c9d1120bf, type: 3}
   phoneLogicBoard: {fileID: 1956358955}
   thumbsUp: {fileID: 129355059}
   nextButton: {fileID: 1787288893}
@@ -1091,6 +1093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360981806240533504, guid: a00915904afd4ff46b8e2ab2f1b35e70,
+        type: 3}
+      propertyPath: m_TagString
+      value: music
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a00915904afd4ff46b8e2ab2f1b35e70, type: 3}
@@ -1407,7 +1414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851093738}
   m_LocalRotation: {x: 0.34647664, y: -0, z: -0, w: 0.93805856}
-  m_LocalPosition: {x: 3.01, y: 6.970002, z: -4.05}
+  m_LocalPosition: {x: 3.01, y: 8.12, z: -7.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

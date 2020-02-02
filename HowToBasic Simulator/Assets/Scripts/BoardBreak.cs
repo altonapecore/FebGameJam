@@ -23,6 +23,7 @@ public class BoardBreak : MonoBehaviour
         if(collision.gameObject.tag == "hammer" && !GetComponent<Rigidbody>().isKinematic && collision.rigidbody.velocity.magnitude >= velThresh)
         {
             Break();
+            this.GetComponent<AudioSource>().Play();
         }
     }
 
