@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5169485734841577027}
   m_Layer: 0
   m_Name: AxePhysics
-  m_TagString: Untagged
+  m_TagString: hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 1523429539209019666}
   m_Layer: 0
   m_Name: Axe
-  m_TagString: Untagged
+  m_TagString: hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
