@@ -37,7 +37,6 @@ public class MakeDecal : MonoBehaviour
 
         // get
         int numEnter = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Enter, enter);
-        Debug.Log(numEnter);
 
         // iterate
         for (int i = 0; i < numEnter; i++)
