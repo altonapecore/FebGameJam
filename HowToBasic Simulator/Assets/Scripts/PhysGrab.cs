@@ -18,7 +18,14 @@ public class PhysGrab : MonoBehaviour
 	private void OnMouseDown()
 	{
 		if (!thisRB.isKinematic)
+		{
 			grabbed = true;
+			spring.connectedBody = thisRB;
+			anchor.transform.position = transform.position;
+			spring.connectedAnchor = new Vector3(0,0,0);
+			spring.anchor = transform.position;
+		}
+		
 	}
 
 	private void OnMouseUp()
@@ -32,9 +39,8 @@ public class PhysGrab : MonoBehaviour
 	{
 		if (grabbed)
 		{
-			anchor.transform.position = new Vector3(anchor.transform.position.x, 6, anchor.transform.position.z);
+			anchor.transform.position = new Vector3(anchor.transform.position.x, 2, anchor.transform.position.z);
 			anchor.transform.position += new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y"));
-			spring.connectedBody = thisRB;
 			thisRB.WakeUp();
 		}
 	}
