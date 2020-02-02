@@ -39,17 +39,18 @@ public class HandleText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // testing
-        //Debug.Log(!screen.IsSleeping());
-
         if (step == 0)
         {
             text = textSteps[step];
             step++;
         }
-        else if (step == 1 && !screenRigid.isKinematic)
+        else if (step == 1 && screenRigid != null)
         {
-            text = textSteps[step];
+            if (!screenRigid.isKinematic)
+            {
+                text = textSteps[step];
+                screenRigid = null;
+            }
         }
         else if (step == 2)
         {
@@ -60,9 +61,13 @@ public class HandleText : MonoBehaviour
             text = textSteps[step];
             step++;
         }
-        else if (step == 4 && !boardRigid.isKinematic)
+        else if (step == 4 && boardRigid != null)
         {
-            text = textSteps[step];
+            if (!boardRigid.isKinematic)
+            {
+                text = textSteps[step];
+                boardRigid = null;
+            }
         }
         else if (step == 5)
         {
