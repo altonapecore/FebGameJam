@@ -120,7 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &118516349
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,8 +213,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
-=======
->>>>>>> 3b44bf0ab928fa801f2fdcfe3ac96d0cea64c443
 --- !u!114 &129355059 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8927900239757846150, guid: 7f09b4689e29aa94a8a802006ffa226a,
@@ -228,7 +225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c320e3b72ab3d4a9116a2b3d920e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
 --- !u!1 &198059742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8722283349115244718, guid: 9872b6bb5d0be1e4eb60769a63811feb,
@@ -334,8 +330,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
-=======
->>>>>>> 3b44bf0ab928fa801f2fdcfe3ac96d0cea64c443
 --- !u!1 &558657270
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +662,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f09b4689e29aa94a8a802006ffa226a, type: 3}
-<<<<<<< HEAD
 --- !u!1 &1038771051
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,8 +877,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9872b6bb5d0be1e4eb60769a63811feb, type: 3}
-=======
->>>>>>> 3b44bf0ab928fa801f2fdcfe3ac96d0cea64c443
 --- !u!1 &1428298741
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +930,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1480042972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,8 +1092,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a00915904afd4ff46b8e2ab2f1b35e70, type: 3}
-=======
->>>>>>> 3b44bf0ab928fa801f2fdcfe3ac96d0cea64c443
 --- !u!1 &1725398744
 GameObject:
   m_ObjectHideFlags: 0
