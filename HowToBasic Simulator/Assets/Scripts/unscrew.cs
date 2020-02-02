@@ -5,6 +5,8 @@ using UnityEngine;
 public class unscrew : MonoBehaviour
 {
 	public unscrew[] screwGroup;
+	public GameObject screwDriver;
+	public GameObject phone;
 	Rigidbody toRelease;
 	public Vector3 unscrewTarget;
 	public bool unscrewed = false;
@@ -20,6 +22,16 @@ public class unscrew : MonoBehaviour
 
 	private void OnMouseDown()
 	{
+		screwDriver.transform.position = transform.position;
+		if (transform.rotation.z >0)
+		{
+			screwDriver.transform.rotation = Quaternion.Euler(0, phone.transform.rotation.y - 180.0f, 0);
+		}
+		else
+		{
+			screwDriver.transform.rotation = Quaternion.Euler(0, 0,90.0f);
+		}
+
 		if (!unscrewed)
 			lerping = true;
 	}
