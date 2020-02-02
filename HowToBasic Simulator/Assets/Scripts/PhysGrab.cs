@@ -8,7 +8,7 @@ public class PhysGrab : MonoBehaviour
 	public Rigidbody anchor;
 	Rigidbody thisRB;
 	bool grabbed;
-	SpringJoint spring;
+	public SpringJoint spring;
 	public UnityEvent dragger;
 
 

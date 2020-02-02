@@ -5,6 +5,7 @@ using UnityEngine;
 public class ForceBreak : MonoBehaviour
 {
     public float velThresh;
+    public PhysGrab physGrab;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class ForceBreak : MonoBehaviour
         //Editing parent screen
         Destroy(GetComponent<Rigidbody>());
         GetComponent<BoxCollider>().enabled = false;
+        physGrab.enabled = false;
 
     }
 
