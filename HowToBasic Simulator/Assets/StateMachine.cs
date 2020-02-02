@@ -29,7 +29,7 @@ public class StateMachine : MonoBehaviour
 		state++;
 		if (state >= spawns.Length)
 		{
-			thumbsUp.doTheThing = true;
+			thumbsUp.ThumbsUp();
 			StartCoroutine(WaitForQuit());
 			return;
 		}

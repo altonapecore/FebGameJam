@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceSpeed: 75
-  fallForce: 95
-  stiffness: 1
+  fallForce: 50
+  stiffness: 3
 --- !u!54 &-2484300980879468115
 Rigidbody:
   m_ObjectHideFlags: 0

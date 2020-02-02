@@ -13,6 +13,7 @@ public class MakeDecal : MonoBehaviour
     public float yValue;
     public int maxDecals;
 
+    private int num;
     private int numDecals;
     private ParticleSystem PSystem;
     private ParticleSystem.Particle[] particles;
@@ -37,7 +38,6 @@ public class MakeDecal : MonoBehaviour
 
         // get
         int numEnter = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Enter, enter);
-        Debug.Log(numEnter);
 
         // iterate
         for (int i = 0; i < numEnter; i++)
@@ -45,7 +45,7 @@ public class MakeDecal : MonoBehaviour
             
 
             ParticleSystem.Particle p = enter[i];
-            if (numDecals <= maxDecals)
+            if (numDecals < maxDecals && num%28==0)
             {
                 Instantiate(decal);
                 float tempX = Random.Range(minX, maxX);
@@ -55,6 +55,7 @@ public class MakeDecal : MonoBehaviour
             }
             p.position = new Vector3(1000, p.position.y, 1000);
             enter[i] = p;
+            num = Random.Range(28, 200);
         }
 
         // set

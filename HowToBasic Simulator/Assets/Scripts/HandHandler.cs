@@ -5,22 +5,27 @@ using UnityEngine;
 public class HandHandler : MonoBehaviour
 {
     public AudioSource thumbsGrunt;
-    public bool doTheThing;
 
     // Start is called before the first frame update
     void Start()
     {
-        doTheThing = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (doTheThing)
+        if (Input.GetKeyDown(KeyCode.Y))
         {
-            doTheThing = false;
             thumbsGrunt.Play();
             this.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 9);
         }
+    }
+
+    
+    public void ThumbsUp()
+    {
+        thumbsGrunt.Play();
+        this.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 9);
     }
 }
