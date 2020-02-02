@@ -58,7 +58,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.42858315, y: 1.8895801, z: 2.3933268}
+  m_ConnectedAnchor: {x: -4.37, y: 0.07, z: 1.469}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 30
@@ -100,14 +100,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596352555231793658}
-  m_LocalRotation: {x: -0.50000006, y: -0.5, z: 0.50000006, w: 0.5}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -4.37, y: 0.07, z: 1.469}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1494756427}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 90}
 --- !u!33 &8862439034194676976
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -198,6 +198,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screwGroup:
   - {fileID: 0}
+  screwDriver: {fileID: 6038896226373185803, guid: a68523abab459974fbf152e7b3908c9a,
+    type: 3}
+  phone: {fileID: 0}
   unscrewTarget: {x: 1, y: 0, z: 0}
   unscrewed: 0
 --- !u!114 &810367108
