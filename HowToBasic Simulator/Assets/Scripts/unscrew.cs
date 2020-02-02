@@ -22,18 +22,19 @@ public class unscrew : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		screwDriver.transform.position = transform.position;
-		if (transform.rotation.z == 0)
-		{
-			screwDriver.transform.rotation = Quaternion.Euler(0, phone.transform.rotation.y + 90.0f, 90.0f);
-		}
-		else
-		{
-			screwDriver.transform.rotation = Quaternion.Euler(0, 0,180.0f);
-		}
+		
 
 		if (!unscrewed)
 		{
+			screwDriver.transform.position = transform.position;
+			if (transform.rotation.z == 0)
+			{
+				screwDriver.transform.rotation = Quaternion.Euler(0, phone.transform.rotation.y + 90.0f, 90.0f);
+			}
+			else
+			{
+				screwDriver.transform.rotation = Quaternion.Euler(0, 0, 180.0f);
+			}
 			lerping = true;
 			this.GetComponent<AudioSource>().Play();
 		}
