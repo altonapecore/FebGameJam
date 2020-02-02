@@ -225,6 +225,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c320e3b72ab3d4a9116a2b3d920e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &196077543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927900239045457389, guid: 7f09b4689e29aa94a8a802006ffa226a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1035146845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &196077545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196077543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.578256, y: 2.1287289, z: 1.2379875}
+  m_Center: {x: 6.9290905, y: 0.7032777, z: 0.33591792}
 --- !u!1 &198059742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8722283349115244718, guid: 9872b6bb5d0be1e4eb60769a63811feb,
@@ -1576,6 +1595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 5.3586273
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676841312313640364, guid: 9301839da1b60ce4d9b10d0336213d25,
+        type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4691668188627891757, guid: 9301839da1b60ce4d9b10d0336213d25,
         type: 3}

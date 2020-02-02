@@ -102,7 +102,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 113.227356, y: 101.168846, z: -480.65036}
+  m_ConnectedAnchor: {x: 0.2273564, y: -2.0861416, z: 0.68999994}
   serializedVersion: 2
   m_Spring: 100
   m_Damper: 30
@@ -5038,8 +5038,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9d8e0a904cb655241b2f5b869eee0b48, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0.027
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -33,12 +33,17 @@ public class unscrew : MonoBehaviour
 		}
 
 		if (!unscrewed)
+		{
 			lerping = true;
+			this.GetComponent<AudioSource>().Play();
+		}
+		
 	}
 
 	private void OnMouseUp()
 	{
 		lerping = false;
+		this.GetComponent<AudioSource>().Stop();
 	}
 
 	// Update is called once per frame

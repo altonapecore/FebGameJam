@@ -21,7 +21,7 @@ public class HammerTime : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        int soundIndex = (int)(Random.value * 20);
+        int soundIndex = (int)(Random.value * sounds.Count);
         sounds[soundIndex].Play();
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Stop();
     }

@@ -33,13 +33,16 @@ public class StateMachine : MonoBehaviour
 	public void Happenb()
 	{
 		state++;
-		if (state >= spawns.Length)
+		if (state == spawns.Length)
 		{
 			thumbsUp.ThumbsUp();
 			StartCoroutine(WaitForQuit());
 			return;
 		}
-		Instantiate(spawns[state], spawnTarget);
+		else if (state < spawns.Length)
+		{
+			Instantiate(spawns[state], spawnTarget);
+		}
 	}
 
 	IEnumerator WaitForQuit()
