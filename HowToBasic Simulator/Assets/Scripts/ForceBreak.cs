@@ -6,6 +6,8 @@ public class ForceBreak : MonoBehaviour
 {
     public float velThresh;
     public PhysGrab physGrab;
+    public AudioSource breaking;
+    public AudioSource clink;
 
     // Start is called before the first frame update
     void Start()
@@ -41,10 +43,12 @@ public class ForceBreak : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        clink.Play();
+
         if(collision.gameObject.tag == "hammer" && collision.rigidbody.velocity.magnitude >= velThresh && !GetComponent<Rigidbody>().isKinematic)
         {
             Break();
-            this.GetComponent<AudioSource>().Play();
+            breaking.Play();
         }
     }
 }
