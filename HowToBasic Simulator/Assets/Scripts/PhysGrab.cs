@@ -41,6 +41,11 @@ public class PhysGrab : MonoBehaviour
 		{
 			anchor.transform.position = new Vector3(anchor.transform.position.x, 2, anchor.transform.position.z);
 			anchor.transform.position += new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y"));
+			anchor.transform.position = new Vector3(
+				Mathf.Clamp(anchor.transform.position.x, -10, 10), 
+				anchor.transform.position.y, 
+				Mathf.Clamp(anchor.transform.position.z, -5, 5)
+			); // Constrain to table
 			thisRB.WakeUp();
 		}
 	}
