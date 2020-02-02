@@ -11,7 +11,12 @@ public class StateMachine : MonoBehaviour
 
 	public Rigidbody phoneLogicBoard;
 	public HandHandler thumbsUp;
+	public UnityEngine.UI.Button nextButton;
 
+	private void Start()
+	{
+		nextButton.gameObject.SetActive(false);
+	}
 	// Update is called once per frame
 	void Update()
 	{
@@ -20,11 +25,12 @@ public class StateMachine : MonoBehaviour
 			if (!phoneLogicBoard.isKinematic)
 			{
 				Happenb(); // Fuck everything about event driven programming do ifs in update now
+				nextButton.gameObject.SetActive(true);
 			}
 		}
 	}
 
-	void Happenb()
+	public void Happenb()
 	{
 		state++;
 		if (state >= spawns.Length)
